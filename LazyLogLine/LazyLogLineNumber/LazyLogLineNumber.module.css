@@ -1,0 +1,24 @@
+.lineNumber {
+  display: inline-block;
+  /*width: 55px;*/
+  /*margin-left: 15px;*/
+  /*margin-right: 15px;*/
+  color: #777777 !important;
+  user-select: none;
+  text-align: right;
+  /*min-width: 40px;*/
+  min-width: 5ch;
+  cursor: pointer;
+  text-decoration: none;
+  /*padding-right: 1em*/
+  font-size: 14px;
+}
+
+.lineNumber::before {
+  content: attr(id);
+}
+
+.lineNumberHighlight {
+  composes: lineNumber;
+  color: #ffffff;
+}

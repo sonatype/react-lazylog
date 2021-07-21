@@ -1,0 +1,40 @@
+.line {
+  margin: 0;
+  user-select: none;
+}
+
+.line:hover {
+  background-color: #444444;
+}
+
+.lineHighlight {
+  background-color: #666666;
+}
+
+.lineSelectable {
+  user-select: text;
+}
+
+.lineDepthBar {
+  width: 1ch;
+  height: 100%;
+  border-right: 2px solid #666;
+  position: relative;
+  left: calc(-0.5ch + 1px);
+}
+
+.lineDepthHead {
+  width: 1ch;
+  height: 1ch;
+  border-right: 2px solid #666;
+  border-bottom: 2px solid #666;
+  transform: rotate(-45deg);
+}
+
+.lineDepthHeadExpanded {
+  width: 1ch;
+  height: 1ch;
+  border-right: 2px solid #666;
+  border-bottom: 2px solid #666;
+  transform: rotate(45deg);
+}
