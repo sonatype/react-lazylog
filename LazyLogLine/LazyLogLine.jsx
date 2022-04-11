@@ -121,6 +121,9 @@ export class LazyLogLine extends Component {
           content={lineData?.content}
           color={lineData?.color}
         />
+        {lineData.isHeader && lineData.time > 0 ? (
+          <LineDuration seconds={lineData.time} />
+        ) : null}
       </div>
     );
   }
